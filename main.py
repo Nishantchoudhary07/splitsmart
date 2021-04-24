@@ -9,3 +9,16 @@
 # print(f"Each person owes: {payment_per_person}")
 
 # not complete yet.
+
+
+
+
+first_person = input('Enter Your Name: ')
+exp_first = int(input('Enter The Expense: '))
+
+# second_person = input('Enter Your Name: ')
+
+c = open('file1.txt', 'a')
+c.write('Transections\n')
+c.close()
+
