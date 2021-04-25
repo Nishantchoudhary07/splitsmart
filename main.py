@@ -12,13 +12,12 @@
 
 
 
+print('Welcome To The SplitSmart App')
+person = input('Enter Your Name: ')
+exp = int(input('Enter The Expense: '))
 
-first_person = input('Enter Your Name: ')
-exp_first = int(input('Enter The Expense: '))
+file = open(person, 'a')
+file.write('I Paid: rs.'+str(exp)+'\n')
+file.close()
 
-# second_person = input('Enter Your Name: ')
-
-c = open('file1.txt', 'a')
-c.write('Transections\n')
-c.close()
 
