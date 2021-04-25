@@ -20,4 +20,13 @@ file = open(person, 'a')
 file.write('I Paid: rs.'+str(exp)+'\n')
 file.close()
 
-
+# def one_or_two():
+#     inp = input("Choose 1 or 2")   # Choose 1 to View Balance and choose 2 to Add Expenses.
+#     if inp == "1":
+#         print("View Balance: ")
+#     elif inp == "2":
+#         print("Add Expenses: ")
+#     else:
+#         print("You must choose between 1 or 2")
+#         return one_or_two()
+# one_or_two()
