@@ -14,19 +14,22 @@
 
 print('Welcome To The SplitSmart App')
 person = input('Enter Your Name: ')
-exp = int(input('Enter The Expense: '))
+# exp = int(input('Enter The Expense: '))
+
+print('Enter 1 if you want to view your Balance or Enter 2 if you want to Add Expense: ')
+while True:
+    rn = int(input('Enter 1 or 2: '))
+    if rn == 1:
+        print("You have chosen 'View Balance'.")
+        # r'C:\Users\Akhilesh\Desktop\splitsmart\Nishant'
+        break
+    elif rn == 2:
+        print("You have chosen 2 'Add Expenses'. ")
+        break
+    else:
+        print('Please enter no. 1 or 2')
+
 
 file = open(person, 'a')
-file.write('I Paid: rs.'+str(exp)+'\n')
+# file.write('I Paid: rs.'+str(exp)+'\n')
 file.close()
-
-# def one_or_two():
-#     inp = input("Choose 1 or 2")   # Choose 1 to View Balance and choose 2 to Add Expenses.
-#     if inp == "1":
-#         print("View Balance: ")
-#     elif inp == "2":
-#         print("Add Expenses: ")
-#     else:
-#         print("You must choose between 1 or 2")
-#         return one_or_two()
-# one_or_two()
